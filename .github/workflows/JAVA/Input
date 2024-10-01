@@ -1,0 +1,51 @@
+// 입력메서드
+: 키보드로 입력받을 준비하라고 명령을 하면 컴퓨터가 입력받을 준비를 하는 것
+
+// 필요한 준비
+1. import 하기  => 라이브러리를 내 코드에 포함시키는 작업
+  : import java.util.Scanner;
+2. Scanner sc = new Scanner(System.in)
+  => 내 코드에 포함이 시키면 실제로 사용하기 위함
+
+// 메소드 활용 코드
+package input;
+
+// 1. 준비물 : 입력하는 기능을 내 코드에 연결시켜줌
+import java.util.Scanner;
+
+public class Input {
+  public static void main(String[] args) {
+    // 2. 준비물 : Scanner를 sc라는 이름을 사용하겠다
+    Scanner sc = new Scanner(Sytem.in);
+    // 해설 : 앞으로 스케너를 sc 라는 이름으로 사용한다
+              = sc는 new라는 키워드를 사용해서 메모리에 할당한다 (입력기능을 포함 시킨다는 뜻)
+  }
+}
+
+
+
+
+
+// 입력메서드의 종류
+1. sc.next();        : 문자열 입력(기능자체가 키보드로 입력한다)
+2. sc.nextInt();     : 정수형 입력
+3. sc.nextFloat();   : 실수형 입력
+4. sc.nextLine();    : 문자형 띄어스기까지 포함해서 입력
+
+
+// 입력메소드를 활용한 코드
+package input;
+import java.util.Scanner;
+public class Input {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println(sc.next());                    // 문자형 콘솔에 출력
+    System.out.println(sc.nextInt());                 // 정수형 콘솔에 출력
+    System.out.println(sc.nextFloat());               // 실수형 콘솔에 출력
+    System.out.println(sc.nextLine());                // 문자형 띄어쓰기까지 포함해서 콘솔에 출력
+  }
+}
+
+
+
+
