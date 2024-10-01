@@ -1,0 +1,27 @@
+// 출력 메소드의 종류
+1. System.out.print();                     : console에 출력
+2. System.out.println();                   : console에 출력하고 줄바꿈
+3. System.out.printf("형식지정", 출력값);    : console 출력값을 format값으로 출력
+
+// format 출력메소드 형식지정자 종류
+1. String       : 문자열
+2. Character    : 문자
+3. Decimal      : 정수형
+4. Float        : 실수형
+
+
+// 출력메소드
+// format 형식자
+package input_output;
+public class Output {
+	public static void main(String[] args) {
+		System.out.printf("%s", "hello");		// 문자열 : string
+		System.out.printf("%c", 'A');			// 문자열 : character
+		System.out.printf("%d", 100);			// 정수형 : Decimal
+		System.out.printf("%f", 3.14);			// 실수형 : Float
+	}
+}
+
+
+
+
